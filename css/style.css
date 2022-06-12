@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-color: #242f9b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  background-color: #e8f5ff;
+  padding: 5% 10%;
+  margin: 0 auto;
+}
+
+section {
+  background-color: white;
+  padding: 5% 15%;
+  margin: 5% 0;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #646fd4;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+h2 {
+  text-align: center;
+}
+
+.input {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input label {
+  font-size: large;
+  font-weight: 700;
+}
+
+.input input {
+  background-color: #dbdffd;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.input input:hover {
+  border: 1px solid #242f9b;
+}
+
+.input-inline {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.input-inline label {
+  padding: 10px 10px 10px 0;
+}
+
+.input-book button {
+  font-size: large;
+  color: white;
+  background-color: #646fd4;
+  padding: 20px;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #242f9b;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #646fd4;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.search-book input {
+  border: 1px solid #242f9b;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 100%;
+  padding: 6px;
+}
+
+.search-book input:hover {
+  border: 1px solid #242f9b;
+}
+
+.search-book button {
+  color: white;
+  background-color: #646fd4;
+  padding: 6px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+}
+
+.action-btn {
+  color: white;
+  background-color: #646fd4;
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.remove-btn {
+  color: white;
+  background-color: #d46464;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+}
+
+.action {
+  display: flex;
+}
+
+.dialog {
+  display: none;
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  border: 1px solid #d46464;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 15px;
+  margin: auto;
+  height: max-content;
+  z-index: 10;
+}
+
+.dialog h2 {
+  color: #d46464;
+}
+
+@media (min-width: 800px) {
+  article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .action {
+    flex-direction: column;
+  }
+  .dialog div {
+    display: flex;
+    flex-direction: row;
+  }
+}

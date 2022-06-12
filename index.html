@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <header>
+      <h1>Bookshelf Apps</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Masukan Buku Baru</h2>
+        <form class="input-book">
+          <div class="input">
+            <label for="title">Judul</label>
+            <input type="text" name="title" id="title" required />
+          </div>
+          <div class="input">
+            <label for="author">Penulis</label>
+            <input type="text" name="author" id="author" required />
+          </div>
+          <div class="input">
+            <label for="year">Tahun</label>
+            <input type="number" name="year" id="year" required />
+          </div>
+          <div class="input-inline">
+            <label for="isComplete">Selesai dibaca</label>
+            <input type="checkbox" name="isComplete" id="isComplete" />
+          </div>
+          <button id="submit" type="submit">Masukan Buku ke rak</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Cari Buku</h2>
+        <form class="search-book">
+          <div class="input-inline">
+            <label for="query">Judul</label>
+            <input type="text" name="query" id="query" />
+            <button id="cari" type="submit">Cari</button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2>Belum selesai dibaca</h2>
+        <div class="incomplete"></div>
+      </section>
+
+      <section>
+        <h2>Selesai dibaca</h2>
+        <div class="iscomplete"></div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
