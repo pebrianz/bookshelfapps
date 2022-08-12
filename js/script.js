@@ -35,7 +35,7 @@ function searchBook() {
   if (query) {
     books = Books.filter((book) => {
       let title = book.title.toLowerCase();
-      return title.includes(query.toLowerCase());
+      return title.includes(query.toLowerCase().trim());
     });
   } else {
     books = Books;
