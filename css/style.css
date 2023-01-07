@@ -16,13 +16,13 @@ header {
 
 main {
   background-color: #e8f5ff;
-  padding: 5% 10%;
+  padding: 5% 5%;
   margin: 0 auto;
 }
 
 section {
   background-color: white;
-  padding: 5% 15%;
+  padding: 5% 10%;
   margin: 5% 0;
   border: 1px solid transparent;
   border-radius: 10px;
@@ -157,6 +157,12 @@ h2 {
 }
 
 @media (min-width: 800px) {
+  main {
+    padding: 5% 10%;
+  }
+  section {
+    padding: 5% 15%;
+  }
   article {
     display: flex;
     align-items: center;
